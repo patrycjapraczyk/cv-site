@@ -85,6 +85,10 @@ Layout Styles
     clear: both;
 }
 
+.row {
+    width: 100vw;
+}
+
 @media (min-width: 48em) {
     .row {
         margin-right: -15px;
@@ -96,7 +100,7 @@ Layout Styles
 /* breaking line */
 
 .line-break {
-    width: 70vw;
+    width: 30vw;
     height: 3px;
     border-bottom: 1px solid black;
     margin: auto;
@@ -123,7 +127,7 @@ section {
 /* Media Query excludes extra small devices and includes small and above */
 
 [class*='col-'] {
-    width: 100%;
+    width: 90%;
     padding-left: 15px;
     padding-right: 15px;
 }
