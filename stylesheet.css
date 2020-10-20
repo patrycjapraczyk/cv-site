@@ -19,7 +19,7 @@ Reset
 html {
     box-sizing: border-box;
     margin: 0;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden
 }
 
@@ -30,7 +30,7 @@ html {
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 .line {
@@ -60,14 +60,14 @@ Layout Styles
 .container {
     margin-right: auto;
     margin-left: auto;
-    max-width: 1170px;
+    /*max-width: 1170px;*/
     padding-right: 5px;
     padding-left: 5px;
 }
 
 @media (min-width: 48em) {
     .container {
-        max-width: 80%;
+        max-width: 100%;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -83,10 +83,6 @@ Layout Styles
     content: "";
     display: table;
     clear: both;
-}
-
-.row {
-    width: 100vw;
 }
 
 @media (min-width: 48em) {
