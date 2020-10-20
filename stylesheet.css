@@ -64,7 +64,7 @@ Layout Styles
     padding: 1em;
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025px) {
     .container {
         max-width: 100%;
         padding-right: 15px;
@@ -84,10 +84,10 @@ Layout Styles
     clear: both;
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025px) {
     .row {
-        margin-right: -15px;
-        margin-left: -15px;
+        margin-right: 3em;
+        margin-left: 3em;
     }
 }
 
@@ -107,7 +107,7 @@ section {
     margin: 0em;
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025pxs) {
     .line-break {
         width: 45em;
         margin-bottom: 2.5em;
@@ -124,14 +124,21 @@ section {
 [class*='col-'] {
     width: 100%;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: s 30px;
 }
 
 .col-1-2-footer {
     width: 50%;
 }
 
-@media (min-width: 48em) {
+@media screen and (min-width:481px) and (max-width:1025px) {
+    [class*='col-'] {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
+@media (min-width:1025px) {
     [class*='col-'] {
         float: left;
     }
@@ -140,7 +147,7 @@ section {
     }
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025px) {
     .pull-right-sm {
         float: right;
     }
@@ -195,7 +202,7 @@ section {
     padding: 0.5em;
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025px) {
     .title-group {
         position: absolute;
         top: 50%;
@@ -226,6 +233,18 @@ section {
     }
 }
 
+@media screen and (min-width:481px) and (max-width:1025px) {
+    .hero-title {
+        font-size: 4em;
+    }
+    .hero-subtitle {
+        font-size: 3em;
+    }
+    .hero-primary {
+        height: 90vh;
+    }
+}
+
 
 /*Menu Modules*/
 
@@ -238,7 +257,7 @@ section {
     text-align: center;
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025px) {
     .hamburger {
         display: none;
     }
@@ -251,7 +270,7 @@ section {
     display: none;
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025px) {
     .pagination-group {
         display: block;
         position: fixed;
@@ -295,9 +314,15 @@ section {
     font-size: 1.2em;
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025px) {
     .title {
         font-size: 3em;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1025px) {
+    .title {
+        font-size: 2.5em;
     }
 }
 
@@ -322,9 +347,15 @@ footer {
     padding-right: 15px;
 }
 
-@media (min-width: 48em) {
+@media (min-width:1025px) {
     footer {
         height: 40vh;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1025px) {
+    footer {
+        height: 20vh;
     }
 }
 
@@ -385,7 +416,16 @@ footer {
     float: right;
 }
 
-@media (min-width: 48em) {
+@media screen and (min-width:481px) and (max-width:1025px) {
+    .img-contact {
+        max-width: 30%;
+    }
+    .img-jobs {
+        max-width: 50%;
+    }
+}
+
+@media (min-width:1025px) {
     .img-jobs {
         max-width: 60%;
     }

@@ -22,9 +22,7 @@ $(document).on('click', '.next-viewport-up', function(event) {
 let getClosestDown = function() {
     var scrollPos = $(document).scrollTop();
     let lowest = 100000000;
-    let closest = 1;
-    console.log("scroll pos");
-    console.log(scrollPos);
+    let closest = 2;
     $('.scroll-elem').each(function(i) {
         let elementOffset = $(this).offset().top;
         let distance = elementOffset - scrollPos;
@@ -40,9 +38,7 @@ let getClosestDown = function() {
 let getClosestUp = function() {
     var scrollPos = $(document).scrollTop();
     let lowest = 100000000;
-    let closest = 1;
-    console.log("scroll pos");
-    console.log(scrollPos);
+    let closest = 0;
     $('.scroll-elem').each(function(i) {
         let elementOffset = $(this).offset().top;
         let distance = scrollPos - elementOffset;
