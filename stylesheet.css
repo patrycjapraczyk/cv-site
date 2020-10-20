@@ -171,7 +171,6 @@ section {
     background-size: cover;
     height: 76vh;
     width: 100vw;
-    margin-bottom: 1em;
 }
 
 .hero-body {
@@ -207,6 +206,7 @@ section {
         background-image: url(images/background.jpg);
         height: 100vh;
         text-align: left;
+        margin-bottom: 1em;
     }
     .hero-body {
         left: 50em;
