@@ -169,7 +169,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 76vh;
     width: 100vw;
     margin-bottom: 1em;
 }
@@ -193,7 +193,7 @@ section {
 }
 
 .title-group {
-    padding: 1em;
+    padding: 0.5em;
 }
 
 @media (min-width: 48em) {
